@@ -1,0 +1,37 @@
+<div class="main">
+    <h1 class="page-header" align="left">Detalhe do Voo #{{voo.numero}}</h1>
+
+    <div class="row">
+        <div class="col-md-2"><b>Horário de partida</b></div>
+        <div class="col-md-10">{{voo.horarioSaida | date:'hh:mm'}}</div>
+</div>
+<div class="row">
+        <div class="col-md-2"><b>Horário de chegada:</b></div>
+        <div class="col-md-10">{{voo.horarioChegada | date:'hh:mm'}}</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2"><b>Origem:</b></div>
+        <div class="col-md-10">{{voo.cidadeOrigem.nome}}</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2"><b>Destino:</b></div>
+        <div class="col-md-10">{{voo.cidadeDestino.nome}}</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2"><b>Piloto:</b></div>
+        <div class="col-md-10">{{voo.piloto.nome}}</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2"><b>Avião:</b></div>
+        <div class="col-md-10">{{voo.aeronave.nome}}</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2"><b>Status:</b></div>
+        <div class="col-md-10">{{voo.status.nome}}</div>
+    </div>
+</div>
